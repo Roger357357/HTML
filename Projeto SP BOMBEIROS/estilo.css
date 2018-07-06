@@ -1,7 +1,9 @@
+/* Formatando */
 * {
 	margin: 0;
 	padding: 0;
 }
+/* Geral */
 h1 {
 	color: #4e4e4e;
 	font-size: 2.5em;
@@ -25,9 +27,8 @@ ul a:hover {
 	background-position: right bottom;
 	color: #fff;
 }
-/*
-**** Layout ****
-*/
+/* Area Cabeçalho*/
+
 #area-cabecalho {
 	background-color: #D02929;
 	padding: 15px;
@@ -51,7 +52,7 @@ a {
 }
 a:link, a:visited {
 	color: #fff;
-	padding: 8px 12px;
+	padding: 6px 16px;
 }
 
 a:hover {
@@ -61,4 +62,18 @@ a:hover {
 }
 .branco{
 	color: white;
+}
+/* Noticias - Area postagem */
+#area-conteudo {
+	margin: 50px 100px;
+	border: 1px solid blue;
+}
+.postagem {
+	margin: 30px 20px;
+	padding: 100px;
+	width: 1000px;
+	background-image: url(imagens/imagem-aph.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	border: 1px solid green;
 }
