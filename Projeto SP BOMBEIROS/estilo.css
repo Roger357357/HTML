@@ -28,14 +28,26 @@ ul a:hover {
 	color: #fff;
 }
 /* Area Cabeçalho*/
-
+/* IDS */
+#nome-empresa {
+	line-height: 2.5;
+	padding: 0px 20px;
+}
+#bloco-promocao {
+	width: 200px;
+	border: 3px ridge #E5E90B;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
 #area-cabecalho {
 	background-color: #D02929;
-	padding: 15px;
+	padding: 10px;
 }
 
 #area-logo {
-	padding: 10px;
+	padding: 20px 80px  5px 80px;
 }
 #area-menu {
 	padding: 10px;
@@ -60,9 +72,15 @@ a:hover {
 	background: #fff;
 	text-decoration: none;
 }
+/* Classes */
 .branco{
 	color: white;
+	clear: both;
 }
+.float {
+	float: left;
+}
+
 /* Noticias - Area postagem */
 #area-conteudo {
 	margin: 50px 100px;
