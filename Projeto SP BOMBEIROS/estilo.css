@@ -4,6 +4,9 @@
 	padding: 0;
 }
 /* Geral */
+body {
+	min-width: 620px;
+}
 h1 {
 	color: #4e4e4e;
 	font-size: 2.5em;
@@ -68,7 +71,7 @@ a {
 	a:link - link normal
 	a:visited  - link visitado
 	a:hover - quando o usuário passa o mouse em cima do link 
-	
+
 	********************
 */
 a:link, a:visited {
