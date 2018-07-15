@@ -31,7 +31,7 @@ ul a:hover {
 /* IDS */
 #nome-empresa {
 	line-height: 2.5;
-	padding: 0px 20px;
+	margin: 0px 20px;
 }
 #bloco-promocao {
 	width: 200px;
@@ -52,6 +52,7 @@ ul a:hover {
 #area-menu {
 	padding: 10px;
 	text-align: right;
+	clear: both;
 }
 #home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato {
     /*color: #D02929;
@@ -62,6 +63,14 @@ ul a:hover {
 a {
 	text-decoration: none;	
 }
+/*  ********************
+
+	a:link - link normal
+	a:visited  - link visitado
+	a:hover - quando o usuário passa o mouse em cima do link 
+	
+	********************
+*/
 a:link, a:visited {
 	color: #fff;
 	padding: 12px 24px;
@@ -75,7 +84,7 @@ a:hover {
 /* Classes */
 .branco{
 	color: white;
-	clear: both;
+	
 }
 .float {
 	float: left;
