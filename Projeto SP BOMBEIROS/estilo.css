@@ -2,10 +2,11 @@
 * {
 	margin: 0;
 	padding: 0;
+	/*border:1px solid green;*/
 }
 /* Geral */
 body {
-	min-width: 620px;
+	min-width: 900px;
 }
 h1 {
 	color: #4e4e4e;
@@ -33,8 +34,18 @@ ul a:hover {
 /* Area Cabeçalho*/
 /* IDS */
 #nome-empresa {
-	line-height: 2.5;
-	margin: 0px 20px;
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	/*border: 1px solid blue;*/
+	margin: 90px 40px;
+}
+#nome-empresa-subtitulo {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	/*border: 1px solid blue;*/
+	margin: 140px -265px;
 }
 #bloco-promocao {
 	width: 200px;
@@ -45,7 +56,8 @@ ul a:hover {
 	right: 0px;
 }
 #area-cabecalho {
-	background-color: #D02929;
+	background: #D02929 url(imagens/bombeiro.png) no-repeat top center;
+	height: 310px;
 	padding: 10px;
 }
 
@@ -53,14 +65,16 @@ ul a:hover {
 	padding: 20px 80px  5px 80px;
 }
 #area-menu {
+	background: black;
 	padding: 10px;
-	text-align: right;
+	border-collapse: collapse;
+	text-align: center;
 	clear: both;
 }
 #home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato {
     /*color: #D02929;
 	background: #fff;*/
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
 	text-decoration: none;
 }
 a {
@@ -76,12 +90,12 @@ a {
 */
 a:link, a:visited {
 	color: #fff;
-	padding: 12px 24px;
+	padding: 9px 60px;
+	/*border: 1px solid blue;*/
 }
 
 a:hover {
-	color: #D02929;
-	background: #fff;
+	color: #BCB4B5;
 	text-decoration: none;
 }
 /* Classes */
@@ -96,7 +110,7 @@ a:hover {
 /* Noticias - Area postagem */
 #area-conteudo {
 	margin: 50px 100px;
-	border: 1px solid blue;
+	border: 1px solid green;
 }
 .postagem {
 	margin: 30px 20px;
@@ -106,4 +120,47 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	border: 1px solid green;
+}
+/* Contato - Area Conteudo */
+
+input, textarea {
+	margin: 10px 0;
+	width: 550px;
+	height: 27px;
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid black;
+	padding-left: 10px;
+}
+textarea {
+	height: 65px;
+}
+input#submit {
+	width: 10%;
+	padding-left: 0;
+	margin: 0;
+}
+
+#area-conteudo-contato {
+
+}
+#titulo-contato {
+	margin: 60px 80px;
+}
+#formulario {
+	margin-left: 100px;
+	width: 565px;
+	float: left;
+	/*border: 1px solid blue;*/
+}
+#area-informacoes {
+	float: right;
+	margin: -150px 0px -100px 100px;
+}
+#titulo-empresa {
+	margin: 60px 80px;
+	color: #AC0104;
+}
+#area-informacoes #endereco {
+	margin: -50px 80px;
 }
