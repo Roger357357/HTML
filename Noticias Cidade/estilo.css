@@ -27,6 +27,23 @@ input {
 	font-size: 0.9em;
 	background: #fff;
 }
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+}
+.entrevista h3 {
+	background: #de003e;
+}
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+} 
 .submit {
 	width: 80px;
 	background: #b10333;
@@ -88,25 +105,20 @@ body.fotos #navegacao a#fotos {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 195px;
-	background: blue;
 }
 #duas-colunas #primario {
 	width: 555px;
 	float: left;
 	margin: 0 0 20px 195px;
-	background: blue;
 }
 #uma-coluna #primario {
 	width: 750px;
 	float: left;
-	margin: 0 0 20px 0px;
-	background: blue;
 }
 #secundario {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 15px;
-	background: green;
 }
 #lateral {
 	width: 180px;
