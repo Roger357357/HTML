@@ -48,6 +48,7 @@ h1 {
 #area-menu {
 	/*border: 1px solid green;*/
 	float: left;
+	display: block-inline;
 	background: black;
 	width: 100%;
 	
