@@ -46,7 +46,53 @@ h1 {
 	padding: 20px 80px  5px 80px;
 }
 #area-menu {
-	/*border: 1px solid green;*/
+	background: #000000;
+	width: 100%;
+}
+#area-menu ul li{
+	color: #AC0104;
+	text-align: center;
+	display: block;
+	
+}
+a {
+	text-decoration: none;
+}
+#area-menu a {
+	float: left;
+	padding: 10px 36px;
+	width: 201px;
+	font-size: 18px;
+	color: #AC0104;
+	background: #ffffff;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+}
+#area-menu li:hover a {
+	color: #ffffff;
+	background: #AC0104;
+	
+}
+li:hover > .sub-menu {
+  display: block;
+}
+#home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato {
+    color: #ffffff;
+	background: #AC0104;
+	border-bottom: 3px solid white;
+}
+.submenu {
+	clear: both;
+	position: absolute;
+    top: 372px;
+  	left: 273px;
+  	z-index: 1000;
+
+}
+/*
+#area-menu {
+	/*border: 1px solid green;
 	float: left;
 	display: block-inline;
 	background: black;
@@ -63,17 +109,17 @@ h1 {
 }
 #area-menu ul li {
 	float: left;
-	/*border: 1px solid blue;*/
+	/*border: 1px solid blue;
 	padding: 13px 0px;
 }
 #area-menu ul li a{
-	/*border: 1px solid green;*/
+	/*border: 1px solid green;
 	padding: 13px 60px 10px 60px;
 }
 
 #home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato {
     /*color: #D02929;
-	background: #fff;*/
+	background: #fff;
 	border-bottom: 3px solid white;
 	text-decoration: none;
 }
@@ -87,17 +133,17 @@ a {
 	a:hover - quando o usuário passa o mouse em cima do link 
 
 	********************
-*/
+
 a:link, a:visited {
 	color: #fff;
 	padding: 0px 60px;
-	/*border: 1px solid blue;*/
+	/*border: 1px solid blue;
 }
 
 a:hover {
 	color: #BCB4B5;
 	text-decoration: none;
-}
+}/*
 /* Classes */
 .branco{
 	color: white;
