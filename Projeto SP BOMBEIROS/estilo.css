@@ -82,50 +82,6 @@ li:hover > .sub-menu {
 	background: #AC0104;
 	border-bottom: 3px solid white;
 }
-.submenu {
-	clear: both;
-	position: absolute;
-    top: 372px;
-  	left: 273px;
-  	z-index: 1000;
-
-}
-/*
-#area-menu {
-	/*border: 1px solid green;
-	float: left;
-	display: block-inline;
-	background: black;
-	width: 100%;
-	
-}
-#area-menu ul {
-	margin: 0;
-	padding: 0 center;
-	list-style: none;
-	background: black;
-	float: left;
-	
-}
-#area-menu ul li {
-	float: left;
-	/*border: 1px solid blue;
-	padding: 13px 0px;
-}
-#area-menu ul li a{
-	/*border: 1px solid green;
-	padding: 13px 60px 10px 60px;
-}
-
-#home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato {
-    /*color: #D02929;
-	background: #fff;
-	border-bottom: 3px solid white;
-	text-decoration: none;
-}
-a {
-	text-decoration: none;	
-}
 /*  ********************
 
 	a:link - link normal
@@ -133,26 +89,46 @@ a {
 	a:hover - quando o usuário passa o mouse em cima do link 
 
 	********************
-
-a:link, a:visited {
-	color: #fff;
-	padding: 0px 60px;
-	/*border: 1px solid blue;
+*/
+/* Rodapé */
+#rodape {
+	background: linear-gradient(to top, white, yellow);
+	border: 1px solid blue;
+	position: absolute;
+	top: 600px;
+	width: 100%;
 }
-
-a:hover {
-	color: #BCB4B5;
-	text-decoration: none;
-}/*
+#nome-empresa-rodape {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 22px;   
+	border: 1px solid blue;
+	
+}
 /* Classes */
 .branco{
-	color: white;
+	color: black;
 	
 }
 .float {
 	float: left;
 }
-
+.submenu {
+	clear: both;
+	position: absolute;
+    top: 372px;
+  	left: 273px;
+  	z-index: 1000;
+}
+/* Index - Area Informações */
+#area-informacoes {
+	position: absolute;
+	top: 500px;
+	width: 97%;
+	margin: -130px 0px -80px;
+	border: 1px solid red;
+}
 /* Noticias - Area postagem */
 #area-conteudo {
 	margin: 50px 100px;
@@ -198,10 +174,6 @@ input#submit {
 	width: 565px;
 	float: left;
 	/*border: 1px solid blue;*/
-}
-#area-informacoes {
-	float: right;
-	margin: -150px 0px -100px 100px;
 }
 #titulo-empresa {
 	margin: 60px 80px;
