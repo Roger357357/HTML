@@ -97,14 +97,36 @@ li:hover > .sub-menu {
 	position: absolute;
 	top: 600px;
 	width: 100%;
+	padding: 165px;
+}
+#area-logo-rodape {
+	/*border: 1px solid green;*/
+}
+#logo-rodape {
+	width: 108px; 
+	position: absolute; 
+	top: 62px; 
+	left: 110px;
+	/*border: 1px solid red;*/
 }
 #nome-empresa-rodape {
 	/*line-height: 2.5;*/
 	color: #AC0104;
 	font-family: "Opens Sans", sans-serif; 
 	font-size: 22px;   
-	border: 1px solid blue;
-	
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 171px;
+	left: 80px;
+}
+#nome-empresa-subtitulo-rodape {
+	color: #AC0104;
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 16px;   
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 200px;
+	left: 40px;
 }
 /* Classes */
 .branco{
