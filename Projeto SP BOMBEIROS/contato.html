@@ -6,26 +6,25 @@
 
 		<title> SP BOMBEIROS - Contato</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 		<link rel="shortcut icon" href="imagens/favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="JavaScript/html5shiv.js"></script>
+		<![endif]-->
 
 	</head>
 
 	<body id="contato">
 
-		<div id="area-cabecalho">
-
-			<!-- <p id="bloco-promocao">
-			Promoção de curso somente HOJE!!!!
-		    </p> -->
-		
+		<header>
 			<div id="area-logo" >
 				<img src="imagens/Logo-SPBOMBEIROS.png" width="215px" class="float">
 				<h1 id="nome-empresa" class="float">SPBOMBEIROS</h1>
 				<p id="nome-empresa-subtitulo" class="float">Centro de Formação Profissional</p>
 			</div>
 
-		</div>
+		</header>
 		<nav id="area-menu">
 			
 			<ul>
@@ -37,46 +36,80 @@
 			</ul>
 	
 		</nav>
-		<div id="area-conteudo-contato">
+		<article>
 
 			<h2 id="titulo-contato">Contato</h2>
+			<h3 id="subtitulo-contato">Você ficou com alguma dúvida? Quer saber mais sobre nós?</h3>
+			<h3 id="subsubtitulo-contato">Entre em Contato conosco!</h3>
+			<h3 id="contato-contato">Telefone : (11) 2577-1367<br>
+									WhatsApp : (11) 94789-8617<br>
+									Email: spbombeiroscfbc@gmail.com</h3>
+			<h3 id="endereco-contato">Rua Professor Souza Barros, N° 254<br>
+									São Judas - CEP: 04307-100 - São Paulo - SP</h3>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.91749864517715!2d-46.6430047253702!3d-23.627992225491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5af7e836360b%3A0xa2b26d9fb1655f2a!2sR.+Prof.+Sousa+Barros%2C+154+-+Vila+Guarani+(Zona+Sul)%2C+S%C3%A3o+Paulo+-+SP%2C+04307-100!5e0!3m2!1spt-BR!2sbr!4v1537369121992" width="958" height="256" frameborder="0" style="border:0" id="maps" allowfullscreen></iframe>
 			<form>
 				
 				<div id="formulario">
 
 					<div>
-						<input type="text" name="nome" id="nome" placeholder="Nome">
+						
+						<input type="text" name="nome" id="nome-formulario" placeholder="Nome" required="required">
 					</div>
 					<div>
-						<input type="email" name="email" id="email" placeholder="E-mail">
+						
+						<input type="text" name="assunto" id="assunto-formulario" placeholder="Assunto" required="required">
 					</div>
 					<div>
-						<input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+						
+						<input type="email" name="email" id="email-formulario" placeholder="E-mail" required="required">
 					</div>
 					<div>
-						<input type="text" name="assunto" id="assunto" placeholder="Assunto">
+						
+						<textarea name="mensagem" id="mensagem-formulario" placeholder="Mensagem" required="required"></textarea>
 					</div>
 					<div>
-						<textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+						
+						<input type="tel" name="telefone" id="telefone-formulario" placeholder="Telefone" required="required">
 					</div>
 					<div style="text-align: center ">
 						<input type="submit" value="Enviar" id="submit">
 					</div>
 					
 				</div>
+				<div style="clear: both;"></div>
 
 			</form>
 
-			<div id="area-informacoes">
-				<h2 id="titulo-empresa">SPBOMBEIROS</h2>
-				<div id="endereco">
-					<p>Rua Professor Souza Barros, N° 254</p>
-					<p>São Judas - CEP.: 0433007-100 - São Paulo - SP</p>
-					<p>A 100 metros da Estação São Judas do Mêtro</p>
-					<p>contato@spbombeiros.bsb.br</p>
-				</div>
-				
+
+			<footer>
+			<div>
+				<img src="imagens/Logo-SPBOMBEIROS.png" id="logo-rodape">
+				<h1 id="nome-empresa-rodape">SPBOMBEIROS</h1>
+				<h1 id="nome-empresa-subtitulo-rodape" >Centro de Formação Profissional</h1>
+				<h3 id="direitos-reservados">@ 2018 Todos os direitos Reservados</h3>
+				<h1 id="contato-rodape">Contato</h1>
+				<img src="imagens/Casa.png" id="casa-rodape">
+				<h2 id="endereço-rodape">&nbsp &nbsp &nbsp &nbsp Rua Professor Souza Barros, N° 254<br>
+					São Judas - CEP: 04307-100 - São Paulo - SP<br>A 350 metros do Metrô Estação São Judas </h2>
+				<img src="imagens/Telefone.png" id="telefone-rodape">
+				<h2 id="telefone-numero-rodape">(11) 2577-1367</h2>
+				<img src="imagens/WhatsApp.png" id="whatsapp-rodape">
+				<h2 id="whatsapp-numero-rodape">(11) 94789-8617</h2>
+				<p id="horario-rodape">Horário de Atendimento<br>Segunda a Sexta-feira: 9h ás 20h<br>Sábado: 9h ás 14h</p>
+				<img src="imagens/Logotipo-busf.png" id="busf-rodape">
+				<p id="delegacia-rodape">Delegacia Estadual</p>
+				<p id="zona-rodape">Zona Sul - Estado de São Paulo</p>
+				<p id="busfbrasil">BUSF BRASIL</p>
+				<a href="https://www.facebook.com/SPBombeirosoficial/"><img src="imagens/facebook-icone.png" id="facebook-rodape"></a>
+				<a href=""><img src="imagens/instagram-icone.png" id="instagram-rodape"></a>
+				<p id="breve-rodape">(Em breve)</p>
 			</div>
+
+		</footer>
+
+		</article>
+
 
 		</div>
 

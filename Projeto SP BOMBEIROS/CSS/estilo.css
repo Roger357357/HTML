@@ -1,0 +1,495 @@
+/* Formatando */
+* {
+	margin: 0;
+	padding: 0;
+	/*border:1px solid green;*/
+}
+/* Geral */
+body {
+	min-width: 900px;
+	max-width: 1400px;
+}
+h1 {
+	color: #4e4e4e;
+}
+/* Area Cabeçalho*/
+/* IDS */
+#nome-empresa {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	/*border: 1px solid blue;*/
+	margin: 90px 40px 0px 40px;
+	text-align: center;
+}
+#nome-empresa-subtitulo {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	/*border: 1px solid blue;*/
+	margin: 130px -245px;
+}
+#bloco-promocao {
+	width: 200px;
+	border: 3px ridge #E5E90B;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+header {
+	background: #D02929 url(../imagens/bombeiro.png) no-repeat top center;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	height: 310px;
+	padding: 10px;
+}
+
+#area-logo {
+	padding: 20px 80px  5px 80px;
+}
+#area-menu {
+	background: #000000;
+	width: 100%;
+	margin: 0px 0px;
+}
+#area-menu ul li{
+	color: #AC0104;
+	text-align: center;
+	display: block;
+	float: left;
+}
+a {
+	text-decoration: none;
+}
+#area-menu a {
+	float: left;
+	padding: 10px 34px;
+	width: 201px;
+	font-size: 18px;
+	color: #AC0104;
+	background: #ffffff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+}
+#area-menu li:hover a {
+	color: #ffffff;
+	background: #AC0104;
+	
+}
+#home .home, #sobre .sobre, #noticias .noticias, #cursos .cursos, #contato .contato, #cursos .cursos{
+    color: #ffffff;
+	background: #AC0104;
+	border-bottom: 3px solid white;
+}
+/*  ********************
+
+	a:link - link normal
+	a:visited  - link visitado
+	a:hover - quando o usuário passa o mouse em cima do link 
+
+	********************
+*/
+/* Rodapé */
+/*#rodape {
+  background: linear-gradient(to top, white, yellow);
+  
+  /*border: 1px solid blue;*/
+  /*position: absolute;
+  top: 600px;
+  position: relative;
+  top: 1500px;
+  width: 100%;
+  padding: 165px 0px;
+}
+#direitos-reservados {
+  font-family: "Opens Sans", sans-serif; 
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  top: -72px;
+  left: 40px;
+}
+#logo-rodape {
+  width: 108px; 
+  position: relative; 
+  top: -92px; 
+  left: 110px;
+  /*border: 1px solid red;
+}
+#nome-empresa-rodape {
+  /*line-height: 2.5;
+  color: #AC0104;
+  font-family: "Opens Sans", sans-serif; 
+  font-size: 22px;   
+  position: relative;
+  top: -108px;
+  left: 80px;
+}
+#nome-empresa-subtitulo-rodape {
+  color: #AC0104;
+  font-family: "Opens Sans", sans-serif; 
+  font-size: 16px;   
+  position: relative;
+  top: -120px;
+  left: 40px;
+}*/
+#home footer    {
+	position: absolute;
+	top: 900px;
+}
+#sobre footer   {
+	position: absolute;
+	top: 1500px;
+}
+#cursos footer  {
+	position: absolute;
+	top: 1500px;
+}
+#noticias footer {
+	position: absolute;
+	top: 1000px;
+}
+#contato footer  {
+	position: absolute;
+	top: 1450px;
+}
+footer {
+	background: linear-gradient(to top, white, yellow);
+	
+	/*border: 1px solid blue;*/
+	/*position: absolute;
+	top: 600px;*/
+	/*position: absolute;
+	top: 1500px;*/
+	width: 100%;
+	padding: 165px 0px;
+}
+#direitos-reservados {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 14px;
+	font-weight: normal;
+	position: absolute;
+	top: 282px;
+	left: 40px;
+}
+#logo-rodape {
+	width: 108px; 
+	position: absolute; 
+	top: 62px; 
+	left: 110px;
+	/*border: 1px solid red;*/
+}
+#nome-empresa-rodape {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 22px;   
+	position: absolute;
+	top: 171px;
+	left: 80px;
+}
+#nome-empresa-subtitulo-rodape {
+	color: #AC0104;
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 16px;   
+	position: absolute;
+	top: 200px;
+	left: 40px;
+}
+#contato-rodape {
+	color: white;
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 22px;
+	position: absolute;
+	top: 40px;
+	left: 340px;
+}
+#casa-rodape {
+	width: 20px;
+	position: absolute;
+	top: 84px;
+	left: 387px;
+}
+#endereço-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	top: 84px;
+	left: 385px;
+}
+#telefone-rodape {
+	width: 25px;
+	position: absolute;
+	top: 180px;
+	left: 385px;
+}
+#telefone-numero-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	top: 180px;
+	left: 420px;
+}
+#whatsapp-rodape {
+	width: 25px;
+	position: absolute;
+	top: 230px;
+	left: 385px;
+}
+#whatsapp-numero-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	top: 230px;
+	left: 420px;
+}
+#horario-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 16px;
+	font-weight: normal;
+	position: absolute;
+	top: 180px;
+	left: 600px;
+}
+#busf-rodape {
+	width: 110px;
+	position: absolute;
+	top: 84px;
+	left: 1150px;
+}
+#delegacia-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 14px;
+	font-weight: normal;
+	position: absolute;
+	top: 190px;
+	left: 1150px;
+}
+#zona-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 12px;
+	font-weight: normal;
+	position: absolute;
+	top: 207px;
+	left: 1131px;
+}
+#busfbrasil {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 16px;
+	font-weight: normal;
+	position: absolute;
+	top: 220px;
+	left: 1160px;
+}
+#facebook-rodape {
+	width: 35px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	position: absolute;
+	top: 270px;
+	left: 600px;
+}
+#instagram-rodape {
+	width: 35px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	position: absolute;
+	top: 270px;
+	left: 645px;
+}
+#breve-rodape {
+	font-family: "Opens Sans", sans-serif; 
+	font-size: 10px;
+	font-weight: normal;
+	position: absolute;
+	top: 307px;
+	left: 638px;
+}
+/* Classes */
+.branco{
+	color: black;
+	
+}
+.float {
+	float: left;
+}
+.submenu {
+	clear: both;
+	position: absolute;
+    top: 372px;
+  	left: 273px;
+  	z-index: 1000;
+}
+/* ******************** Index - Area Informações ********************* */
+#home article {
+	position: absolute;
+	top: 500px;
+	width: 97%;
+	margin: -130px 0px -80px;
+	/*border: 1px solid red;*/
+}
+/* ******************** Sobre - Area Informações ******************** */
+#nome-empresa-sobre {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	/*border: 1px solid blue;*/
+	margin: 20px 40px 0px 40px;
+	text-align: center;
+}
+#subtitulo-sobre {
+	font-size: 20px;
+	color: #AC0104;
+	font-family: Impact, serif;
+	margin: 5px 40px 30px 40px;
+	text-align: center;
+}
+#sobre article {
+
+	padding: 80px 0px 120px 0px;
+	position: absolute;
+	top: 370px;
+	width: 100%;
+	/*border: 1px solid red;*/
+}
+#sobre article p{
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	padding: 10px 100px 0px 100px;
+}
+#imagens-sobre {
+	margin: 45px 150px;
+}
+/* ******************* Noticias - Area postagem ************************ */
+#noticias article {
+	margin: 50px 100px;
+	border: 1px solid green;
+}
+.postagem {
+	margin: 30px 20px;
+	padding: 100px;
+	width: 1000px;
+	background-image: url(../imagens/imagem-aph.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	border: 1px solid green;
+}
+/* ******************* Contato - Area Conteudo ************************* */
+
+input, textarea {
+	width: 450px;
+	height: 27px;
+	font-size: 14px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 7px;
+	border-color: #a4a2a2;
+	border: 1px solid black;
+	padding: 8px 0px  8px 10px;
+}
+textarea {
+	height: 65px;
+}
+input#submit {
+	background: #577cd6;
+	color: white;
+	line-height: 0.8;
+	font-weight: bold;
+	width: 20%;
+	float: left;
+	padding: 10px 0px 20px 0px;
+	margin: 20px 380px;
+	cursor: pointer;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+}
+input#submit:hover {
+	background: #6f90dc;
+	color: white;
+}
+
+#contato article {
+
+}
+#titulo-contato {
+	color: #333333;
+	opacity: 0.8;
+	font-family: "Lato Light", sans-serif;
+	font-size: 50px;
+	font-weight: normal;
+	margin: 70px 80px  0px 80px;
+	text-align: center;
+}
+#subtitulo-contato {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 20px 80px  0px 80px;
+	text-align: center;
+}
+#subsubtitulo-contato {
+	color: #c71212;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	margin: 0px 80px  0px 80px;
+	text-align: center;
+}
+#contato-contato {
+	color: #666666;
+	font-family: "Open Sans", sans-serif;
+	background: url(../imagens/Icone-Telefone.png) no-repeat;
+	width: 20%;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 0px 80px;
+	margin: 30px 30px  0px 275px;
+}
+#endereco-contato {
+	color: #666666;
+	font-family: "Open Sans", sans-serif;
+	background: url(../imagens/Icone-Casa.png) no-repeat;
+	width: 30%;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 0px 0px 17px 80px;
+	margin: -53px 30px  0px 700px;
+}
+#maps {
+	margin: 100px 200px 50px 200px;
+}
+#formulario {
+	margin-left: 200px;
+	width: 958px;
+	padding: 50px 0px 20px 0px;
+	float: left;
+	/*border: 1px solid blue;*/
+}
+#nome-formulario {
+	float: left;
+	margin: 10px 10px 30px 10px;
+}
+#email-formulario {
+	float: left;
+	margin: 10px 10px 30px 10px;
+}
+#telefone-formulario {
+	float: left;
+	margin: 10px 10px 30px 10px;
+}
+#assunto-formulario {
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+#mensagem-formulario {
+	float: right;
+    margin: 10px 14px 0px 0px;
+	width: 450px;
+	height: 111px;
+}
