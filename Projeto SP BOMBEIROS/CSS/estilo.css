@@ -37,6 +37,33 @@ h1 {
 	top: 0px;
 	right: 0px;
 }
+#login {
+	background: white;
+	padding: 0px 60px 0px 14px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	position: absolute;
+	right: 0px;
+	top: 20px;
+}
+#nome-login {
+	color: #060660;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	float: left;
+	padding: 9px 3px 2px 4px;
+}
+#nome-login:hover {
+	color: #0b0ba8;
+}
+#login img {
+	padding: 3px 0px 0px 0px;
+	float: left;
+}
 header {
 	background: #D02929 url(../imagens/bombeiro.png) no-repeat top center;
 	/*background-attachment: fixed;*/
@@ -136,7 +163,7 @@ a {
 }*/
 #home footer    {
 	position: absolute;
-	top: 900px;
+	top: 2300px;
 }
 #sobre footer   {
 	position: absolute;
@@ -146,13 +173,17 @@ a {
 	position: absolute;
 	top: 1500px;
 }
+#bombeirocivil footer {
+	position: absolute;
+	top: 1700px;
+}
 #noticias footer {
 	position: absolute;
 	top: 1000px;
 }
 #contato footer  {
 	position: absolute;
-	top: 1450px;
+	top: 1700px;
 }
 footer {
 	background: linear-gradient(to top, white, yellow);
@@ -329,10 +360,91 @@ footer {
 /* ******************** Index - Area Informações ********************* */
 #home article {
 	position: absolute;
-	top: 500px;
-	width: 97%;
-	margin: -130px 0px -80px;
+	top: 390px;
+	width: 99%;
 	/*border: 1px solid red;*/
+}
+#secao1 {
+	width: 75%;
+	margin: 0px 50px 60px 300px;
+	padding: 60px 0px;
+}
+#secao1 img {
+	width: 400px;
+}
+#nome-empresa-index {
+	/*line-height: 2.5;*/
+	color: #AC0104;
+	font-family: Impact, serif;
+	margin: 40px 0px 0px 0px;
+	text-align: center;
+}
+#resumo-sobre {
+	width: 90%;
+	font-size: 18px;
+	margin: 20px 50px;
+	text-align: center;
+}
+#secao2 {
+	width: 94.9%;
+	background: #AC0104;
+	padding: 0px 40px;
+	display: flex;
+	display: -webkit-flex;
+}
+#secao2 div {
+	align-items: baseline;
+	justify-content: space-around;
+	flex-direction: row;
+	margin: 20px 100px;
+}
+#secao2 p {
+	color: white;
+	font-size: 18px;
+	font-family: Impact, serif;
+	margin-top: 17px;
+	text-align: center;
+	width: 100%;
+}
+#secao2 img {
+	width: 90px;
+	margin: 0px 70px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+}
+#imagem-diferencial1, #imagem-diferencial2, #imagem-diferencial3{
+	
+}
+#secao3 {
+	width: 92%;
+	padding: 50px 0px 0px 60px;
+}
+#secao3 h1 {
+	width: 50%;
+	margin: 50px 0px 10px 0px;
+	color: #AC0104;
+}
+#secao3 p {
+	width: 60%;
+	font-size: 20px;
+	margin: 0px 0px 50px 0px;
+}
+#secao3 img {
+	width: 200px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+#secao3 #fotos {
+	float: left;
+	width: 53%;
+}
+#secao3 #caixa-fotos {
+	width: 100%;
+}
+#secao3 #facebook-lateral {
+	float: left;
+	margin: 50px 0px 0px 235px;
 }
 /* ******************** Sobre - Area Informações ******************** */
 #nome-empresa-sobre {
@@ -359,13 +471,89 @@ footer {
 	/*border: 1px solid red;*/
 }
 #sobre article p{
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
 	padding: 10px 100px 0px 100px;
 }
 #imagens-sobre {
 	margin: 45px 150px;
 }
+/* ******************** Curso - Area postagem ************************** */
+#cursos article {
+	margin: 150px 250px;
+}
+#cursos article li {
+	list-style: none;
+	font-size: 24px;
+}
+#cursos a {
+	color: #AC0104;
+	font-weight: bold;
+}
+/* **************** Bombeiro Civil - Area postagem ********************* */
+#bombeirocivil article {
+	margin-top: 100px;
+}
+#nome-curso {
+	width: 97.5%;
+	padding: 17px;
+	background: linear-gradient(to right, #bd4b4b, #8a0f0f);
+	text-align: center;
+	text-shadow: 2px 0px black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+}
+#sobre-curso {
+	width: 70%;
+	margin: 80px 230px;
+}
+#sobre-curso h1 {
+	font-size: 24px;
+	font-family: "Open Sans", sans-serif;
+	color: black;
+	font-weight: bolder;
+	background: yellow;
+}
+#sobre-curso h2 {
+	font-size: 22px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	padding: 20px 0px 0px 40px;
+	color: #A71414;
+}
+#sobre-curso h3 {
+	font-size: 22px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	margin:-26px 0px 20px 340px;
+}
+#sobre-curso p {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+#sobre-curso ul {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	padding-left: 24px;
+}
+#sobre-curso a {
+	border: 1px solid black;
+	border-radius: 30px;
+	background: #A71414;
+	color: white;
+	float: left;
+	font-size: 24px;
+	font-family: "Open Sans", sans-serif;
+	margin: 70px 350px;
+	padding: 10px 50px;
+}
+#sobre-curso a:hover {
+	color: #A71414;
+	background: white;
+}
+
 /* ******************* Noticias - Area postagem ************************ */
 #noticias article {
 	margin: 50px 100px;
@@ -416,7 +604,8 @@ input#submit:hover {
 }
 
 #contato article {
-
+	margin: 70px 0px;
+	border: 1px solid white;
 }
 #titulo-contato {
 	color: #333333;
