@@ -6,9 +6,12 @@
 
 		<title> SP BOMBEIROS - Contato</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 		<link rel="shortcut icon" href="imagens/favicon.ico" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="JavaScript/html5shiv.js"></script>
 		<![endif]-->
@@ -17,28 +20,72 @@
 
 	<body id="contato">
 
-		<header>
-			<div id="area-logo" >
-				<img src="imagens/Logo-SPBOMBEIROS.png" width="215px" class="float">
-				<h1 id="nome-empresa" class="float">SPBOMBEIROS</h1>
-				<p id="nome-empresa-subtitulo" class="float">Centro de Formação Profissional</p>
-				<a href="" id="nome-login">Área do aluno</a>
+		<!-- 1° Barra de Cabeçalho -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light py-0 border-bottom">
+			<i class="material-icons" id="icon-dia" >today</i>
+			<p id="data">20/01/2019</p>
+			<a href="" id="area-login" class="ml-auto nav-link">
+				<i class="material-icons" id="icon-login" >person</i>
+			    Área do Aluno
+			</a>
+		</nav>
+		<!-- 2° Barra de Cabeçalho -->
+		<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light py-5 ">
+			
+			<!-- Logo -->
+			<a href=""><img src="imagens/Logo-SPBOMBEIROS.png" width="70px" class="ml-4"></a>
+			<a href="index.html" class="navbar-brand ml-2 mr-5">SPBOMBEIROS</a><br>
+			<!-- <a href="index.html" class="navbar-brand">Centro de Formação Profissional</a> -->
+			<!-- Hamburguer -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Barra de Menu e Formulário -->
+			<div class="collapse navbar-collapse" id="nav-target">
+				<!-- Barra de Menu -->
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="home nav-link px-4" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="sobre nav-link px-4" href="sobre.html">Sobre</a></li>
+					<li class="nav-item dropdown"><a class="cursos nav-link dropdown-toggle px-4" href="cursos.html" data-toggle="dropdown">Cursos</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item aph" href="aph.html">APH/SBV</a>
+							<a class="dropdown-item bombeiro-civil" href="bombeiro-civil.html">Bombeiro Civil</a>
+							<a class="dropdown-item nr35" href="nr35.html">NR-35</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown"><a class="acreditacao nav-link dropdown-toggle px-4" href="acreditacao.html" data-toggle="dropdown">Acreditação</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item acreditacao-aph" href="acreditacao-aph.html">APH/SBV</a>
+							<a class="dropdown-item acreditacao-bombeiro-civil" href="acreditacao-bombeiro-civil.html">Bombeiros Civis</a>
+							<a class="dropdown-item acreditacao-nr35" href="acreditacao-nr35.html">NR-35</a>
+						</div>
+					</li>
+					<li class="nav-item"><a class="noticias nav-link px-4" href="noticias.html">Notícias</a></li>
+					<li class="nav-item"><a class="contatos nav-link px-4" href="contato.html">Contato</a></li>
+				</ul>
+				<!-- Formulario -->
+				<form class="form-inline ml-auto">
+					<input type="text" class="form-control" id="pesquisar" placeholder="Pesquisar ...">
+					<div class="input-group-append">
+						<button class="btn btn-danger">
+							<i class="material-icons m-auto" id="icon-procurar" >search</i>
+						</button>
+					</div>	
+				</form>
 			</div>
 
-		</header>
-		<nav id="area-menu">
-			
-			<ul>
-				<li><a class="home" href="index.html">Home</a></li>
-				<li><a class="sobre" href="sobre.html">Sobre</a></li>
-				<li><a class="cursos" href="cursos.html">Cursos</a></li>
-				<li><a class="noticias" href="noticias.html">Notícias</a></li>
-				<li><a class="contato" href="contato.html">Contato</a></li>
-			</ul>
-	
 		</nav>
+		
 		<article>
-
+			<!-- Alertas -->
+			<!-- <div class="alert alert-success fixed-top alert-dismissible py-2">
+				<button type="button" class="close" data-dismiss="alert">&times</button>
+				<strong>Sucesso!</strong> Sua mensagem foi enviada, em breve retornaremos o Sr(a).
+			</div> -->
+			<!-- <div class="alert alert-danger fixed-top alert-dismissible py-2">
+				<button type="button" class="close" data-dismiss="alert">&times</button>
+				<strong>Erro!</strong> Ouve algum erro na sua mensagem, verifique se você fez tudo certo.
+			</div> -->
 			<h2 id="titulo-contato">Contato</h2>
 			<h3 id="subtitulo-contato">Você ficou com alguma dúvida? Quer saber mais sobre nós?</h3>
 			<h3 id="subsubtitulo-contato">Entre em Contato conosco!</h3>
@@ -53,28 +100,28 @@
 				
 				<div id="formulario">
 
-					<div>
+					<div class="form-group mr-5">
 						
-						<input type="text" name="nome" id="nome-formulario" placeholder="Nome" required="required">
+						<input type="text" name="nome" id="nome-formulario" class="form-control" placeholder="Nome" required="required">
 					</div>
-					<div>
+					<div class="form-group ml-2">
 						
-						<input type="text" name="assunto" id="assunto-formulario" placeholder="Assunto" required="required">
+						<input type="text" name="assunto" id="assunto-formulario" class="form-control" placeholder="Assunto" required="required">
 					</div>
-					<div>
+					<div class="form-group mr-5">
 						
-						<input type="email" name="email" id="email-formulario" placeholder="E-mail" required="required">
+						<input type="email" name="email" id="email-formulario" class="form-control" placeholder="E-mail" required="required">
 					</div>
-					<div>
+					<div class="form-group ml-2">
 						
-						<textarea name="mensagem" id="mensagem-formulario" placeholder="Mensagem" required="required"></textarea>
+						<textarea name="mensagem" id="mensagem-formulario" class="form-control" placeholder="Mensagem" required="required"></textarea>
 					</div>
-					<div>
+					<div class="form-group mr-5">
 						
-						<input type="tel" name="telefone" id="telefone-formulario" placeholder="Telefone" required="required">
+						<input type="tel" name="telefone" id="telefone-formulario" class="form-control" placeholder="Telefone" required="required">
 					</div>
-					<div style="text-align: center ">
-						<input type="submit" value="Enviar" id="submit">
+					<div class="form-group px-4 mr-1">
+						<input class="btn btn-danger" type="submit" value="Enviar" id="submit" class="form-control">
 					</div>
 					
 				</div>
@@ -103,8 +150,7 @@
 				<p id="zona-rodape">Zona Sul - Estado de São Paulo</p>
 				<p id="busfbrasil">BUSF BRASIL</p>
 				<a href="https://www.facebook.com/SPBombeirosoficial/"><img src="imagens/facebook-icone.png" id="facebook-rodape"></a>
-				<a href=""><img src="imagens/instagram-icone.png" id="instagram-rodape"></a>
-				<p id="breve-rodape">(Em breve)</p>
+				<a href="https://www.instagram.com/spbombeiroscfbc"><img src="imagens/instagram-icone.png" id="instagram-rodape"></a>
 			</div>
 
 		</footer>
@@ -113,6 +159,12 @@
 
 
 		</div>
+
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="Bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 
